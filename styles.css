@@ -2,7 +2,7 @@
    IMG Editors — shared styles
    =========================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,500&display=swap');
 
 :root {
   --navy:        #0e2c44;
@@ -22,7 +22,7 @@
   --muted:       #738597;
   --border:      #dde6ec;
   --border-soft: #eef2f5;
-  --grad-cta:    linear-gradient(90deg, #2f8f8f 0%, #6ba98a 48%, #d4a449 100%);
+  --grad-cta:    linear-gradient(135deg, #2f8f8f 0%, #6ba98a 48%, #d4a449 100%);
   --shadow-sm:   0 1px 3px rgba(14,44,68,.06), 0 1px 2px rgba(14,44,68,.04);
   --shadow-md:   0 10px 30px rgba(14,44,68,.08);
   --shadow-lg:   0 24px 60px rgba(10,34,54,.16);
@@ -36,7 +36,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--text);
   background: var(--white);
   line-height: 1.6;
@@ -52,7 +52,7 @@ img { max-width: 100%; display: block; }
 .container { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
 
 .eyebrow {
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Inter', sans-serif;
   text-transform: uppercase;
   letter-spacing: .22em;
   font-size: 12px;
@@ -66,7 +66,7 @@ img { max-width: 100%; display: block; }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 15px;
   border: none;
@@ -96,7 +96,7 @@ img { max-width: 100%; display: block; }
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
 .brand { display: flex; align-items: center; gap: 9px; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 19px; color: var(--ink); }
-.brand .dot { width: 26px; height: 26px; border-radius: 50%; background: var(--navy); display: grid; place-items: center; color: #fff; font-size: 12px; font-family: 'Source Sans 3'; font-weight: 700; }
+.brand .dot { width: 26px; height: 26px; border-radius: 50%; background: var(--navy); display: grid; place-items: center; color: #fff; font-size: 12px; font-family: 'Inter'; font-weight: 700; }
 .brand .accent { color: var(--teal); }
 .nav-links { display: flex; align-items: center; gap: 30px; }
 .nav-links a { font-size: 14.5px; font-weight: 500; color: var(--ink); transition: color .15s; }
@@ -236,7 +236,7 @@ img { max-width: 100%; display: block; }
 .field.row2 .field { margin-bottom: 0; }
 label { display: block; font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
 input, textarea {
-  width: 100%; font-family: 'Source Sans 3', sans-serif; font-size: 14.5px;
+  width: 100%; font-family: 'Inter', sans-serif; font-size: 14.5px;
   padding: 11px 14px; border: 1px solid var(--border); border-radius: 10px;
   background: #fff; color: var(--ink); transition: border-color .15s, box-shadow .15s;
 }
