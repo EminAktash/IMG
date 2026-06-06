@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resources — IMG Editors</title>
+  <meta name="description" content="Book a free 15-minute discovery call with Debra and explore guides written for International Medical Graduates." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Calendly assets -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</head>
+<body id="top">
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html#top" class="brand"><span class="dot">IE</span>IMG<span class="accent">Editors</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html#expert">About</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#contact" class="nav-cta">Get Started</a>
+      </div>
+      <button class="nav-burger" id="burger" aria-label="Menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- BOOK A CALL -->
+  <header class="book-hero">
+    <div class="container">
+      <a href="index.html" class="back-pill">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+        Back to home
+      </a>
+      <h1>Not Sure Where to Start?<br/>Book a Call</h1>
+      <p class="sub">Book a free 15-minute Zoom call with Debra. She'll review your situation and point you in the right direction.</p>
+
+      <!-- Calendly inline widget -->
+      <div class="cal-wrap">
+        <div class="calendly-inline-widget" data-url="https://calendly.com/d-anazonwu" style="min-width:320px;height:680px;"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- EBOOKS -->
+  <section class="ebooks">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow center">Ebooks</span>
+        <h2>Guides Written by Debra</h2>
+        <p class="sub">Email Debra to purchase either ebook and receive it directly in your inbox.</p>
+      </div>
+
+      <div class="ebook-grid">
+        <div class="ebook-card reveal">
+          <div class="ic"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M2 4h7a3 3 0 0 1 3 3v13a2.5 2.5 0 0 0-2.5-2.5H2zM22 4h-7a3 3 0 0 0-3 3v13a2.5 2.5 0 0 1 2.5-2.5H22z"/></svg></div>
+          <h3>How to Get Licensed as a U.S. M.D.: Residency or Alternative Certification</h3>
+          <p>Strategies for IMGs navigating residency match or alternative U.S. licensing pathways.</p>
+          <div class="price">$3.99</div>
+          <a class="btn btn-grad btn-block" href="mailto:d.anazonwu@gmail.com?subject=Ebook%20Purchase%20%E2%80%93%20Alternative%20Residency%20Pathways%20(%243.99)">Email to Purchase — $3.99</a>
+        </div>
+
+        <div class="ebook-card reveal">
+          <div class="ic"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M2 4h7a3 3 0 0 1 3 3v13a2.5 2.5 0 0 0-2.5-2.5H2zM22 4h-7a3 3 0 0 0-3 3v13a2.5 2.5 0 0 1 2.5-2.5H22z"/></svg></div>
+          <h3>How to Write Your Residency Personal Statement in One Day</h3>
+          <p>A step-by-step guide with a 19-item questionnaire to craft a compelling personal statement fast.</p>
+          <div class="price">$7.99</div>
+          <a class="btn btn-grad btn-block" href="mailto:d.anazonwu@gmail.com?subject=Ebook%20Purchase%20%E2%80%93%20Residency%20Personal%20Statement%20Guide%20(%247.99)">Email to Purchase — $7.99</a>
+        </div>
+      </div>
+
+      <!-- More support strip -->
+      <div class="more-strip reveal" style="margin-top:40px;">
+        <div class="h"><a href="index.html#pricing">When you're ready for more support →</a></div>
+        <div class="addon-row">
+          <div class="addon"><span>Additional Zoom session</span><span class="pr">$47 / 30 min</span></div>
+          <div class="addon"><span>Additional essays or application answers</span><span class="pr">$75 / hr</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="index.html#top" class="brand"><span class="dot">IE</span>IMG<span class="accent">Editors</span></a>
+      <small>© 2026 IMG Editors. Crafted for international medical graduates.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('burger').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('show');
+    });
+    document.documentElement.classList.add("js");
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.05, rootMargin: "0px 0px -8% 0px" });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  </script>
+</body>
+</html>
