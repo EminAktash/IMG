@@ -61,7 +61,7 @@ svg{display:block}
 .btn-lg{padding:.7rem 1.6rem;font-size:1rem}
 .btn-xl{padding:.95rem 2rem;font-size:1.05rem}
 .btn-block{width:100%}
-.btn-hero{background:var(--grad-accent);color:#fff;box-shadow:0 8px 24px oklch(0.68 0.12 195 / .3)}
+.btn-hero{background:var(--grad-accent);color:var(--accent-fg);box-shadow:0 8px 24px oklch(0.68 0.12 195 / .3)}
 .btn-hero:hover{transform:translateY(-2px);box-shadow:var(--shadow-glow)}
 .btn-premium{background:var(--primary);color:var(--primary-fg)}
 .btn-premium:hover{transform:translateY(-2px);box-shadow:var(--shadow-elegant)}
@@ -151,12 +151,12 @@ svg{display:block}
 @media(min-width:768px){.tier.pop{transform:scale(1.03)}}
 .badge{position:absolute;top:-.75rem;left:50%;transform:translateX(-50%);padding:.25rem 1rem;border-radius:9999px;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}
 .badge.plain{background:var(--secondary);color:var(--foreground);border:1px solid var(--border)}
-.badge.grad{background:var(--grad-accent);color:#fff}
+.badge.grad{background:var(--grad-accent);color:var(--accent-fg)}
 .tier h3{font-size:1.25rem;font-weight:700;color:var(--primary)}
 .tier.pop h3{color:var(--primary-fg)}
 .tier .desc{margin-top:.25rem;font-size:.875rem;color:var(--muted-fg)}
 .tier.pop .desc{color:oklch(0.99 0.005 240 / .7)}
-.tier .price{margin-top:1.5rem;font-family:var(--font-serif);font-size:3rem;font-weight:700;color:var(--primary);line-height:1}
+.tier .price{margin-top:1.5rem;font-family:var(--font-serif);font-size:3rem;font-weight:700;color:var(--primary);line-height:1;letter-spacing:-.02em}
 .tier.pop .price{color:var(--accent)}
 .tier .turn{margin-top:.25rem;font-size:.75rem;font-weight:500;color:var(--muted-fg)}
 .tier.pop .turn{color:oklch(0.99 0.005 240 / .6)}
@@ -247,7 +247,7 @@ textarea{resize:vertical;min-height:7rem}
 
 .ebooks{padding:5rem 0}
 @media(min-width:768px){.ebooks{padding:7rem 0}}
-.ebooks .eyebrow{font-size:1.875rem}
+.ebooks .eyebrow{font-size:.875rem;line-height:1.4}
 .ebook-grid{display:grid;gap:1.5rem;max-width:64rem;margin:0 auto}
 @media(min-width:768px){.ebook-grid{grid-template-columns:1fr 1fr}}
 .ebook{border-radius:1.5rem;padding:2rem;border:1px solid var(--border);background:var(--card);display:flex;flex-direction:column}
@@ -255,7 +255,7 @@ textarea{resize:vertical;min-height:7rem}
 .ebook .ic svg{width:1.5rem;height:1.5rem}
 .ebook h3{font-size:1.25rem;font-weight:700;color:var(--primary);line-height:1.35}
 .ebook p{margin-top:.75rem;color:var(--muted-fg);flex:1}
-.ebook .price{margin-top:1.5rem;font-family:var(--font-serif);font-size:3rem;font-weight:700;color:var(--primary);line-height:1}
+.ebook .price{margin-top:1.5rem;font-family:var(--font-serif);font-size:3rem;font-weight:700;color:var(--primary);line-height:1;letter-spacing:-.02em}
 .ebook .btn{margin-top:1.5rem}
 
 .more{padding-bottom:6rem}
